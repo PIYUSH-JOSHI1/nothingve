@@ -2,9 +2,11 @@ import cv2
 import numpy as np
 import streamlit as st
 
-# Load pre-trained vehicle detection model (Haar Cascade)
-vehicle_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_car.xml')
+# Specify the full path to the Haar cascade XML file
+CASCADE_XML_PATH = "path/to/haarcascade_car.xml"
 
+# Load pre-trained vehicle detection model (Haar Cascade)
+vehicle_cascade = cv2.CascadeClassifier(CASCADE_XML_PATH)
 
 def detect_vehicles(video_file):
     cap = cv2.VideoCapture(video_file)
