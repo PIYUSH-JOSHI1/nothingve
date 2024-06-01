@@ -3,7 +3,7 @@ import numpy as np
 import streamlit as st
 
 # Specify the full path to the Haar cascade XML file
-CASCADE_XML_PATH = "path/to/haarcascade_car.xml"
+CASCADE_XML_PATH = "haarcascade_car.xml"
 
 # Load pre-trained vehicle detection model (Haar Cascade)
 vehicle_cascade = cv2.CascadeClassifier(CASCADE_XML_PATH)
